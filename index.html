@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>tsParticles</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="tsparticles">
+        <div class="heading">
+            <h1>
+                <span class="text-slider-items">
+                    Hey there, I'm Divyanshu.; Welcome to my Github profile.
+                </span>
+                <strong class="text-slider"></strong>
+            </h1>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.1/tsparticles.min.js"
+        integrity="sha512-PYHWDEuXOTJ9MZ+/QHqkbgiEYZ+LImQv3i/9NyYOABFvK37e4q4Wg7aQDN1JpoGiEu1TYZh6JMrZluZox2gbDA=="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="./typed.js-master/lib/typed.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        if ($(".text-slider").length == 1) {
+            var typed_strings = $(".text-slider-items").text();
+            var typed = new Typed(".text-slider", {
+                strings: typed_strings.split("; "),
+                typeSpeed: 50,
+                loop: true,
+                backDelay: 900,
+                backSpeed: 30,
+            });
+        } 
+    </script>
+</body>
+
+</html>
